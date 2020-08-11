@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+div#test {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/* ========================================
+    基本設定
+========================================= */
+
+body {
+  font-family:  "Avenir";
+  color: #434343;
+  background-color: #f6f6f6;
+}
+
+
+/* ========================================
+    ヘッダー
+========================================= */
+
+header {
+  width: 100%;
+  height: 85px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header_inner {
+  text-align : center
+}
+
+
+nav {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 36px;
+}
+
+nav li a {
+  color: #c0c0c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ========================================
+    アバウト
+========================================= */
+
+
+.about {
+  width: 70vw;
+  height: 1400px;
+  background-color: #fff;
+  margin: 30em auto;
+}
+
+.border {
+  width: 120px;
+  margin: 60px auto;
+}
+
+h1#about  {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 180px;
+  padding-bottom: 48px;
+  border-bottom: 3px solid #c0c0c0;
+}
+
+.a_content {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  margin-right: 36px;
+  margin-left: 36px;
+  line-height: 2.5em;
+}
+
+.a_content p {
+  margin-top: 48px;
+}
+
+.a_content li a {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.a_content li a:hover {
+  color: #fff;
+  background-color: #808080;
+}
+
+/* ========================================
+    デザイン
+========================================= */
+
+.design {
+    width: 70vw;
+    height: 950px;
+    background-color: #fff;
+    margin: 20em auto;
+  }
+
+h1#design {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 180px;
+  padding-bottom: 48px;
+  border-bottom: 3px solid #c0c0c0;
+}
+
+.d_content {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 48px;
+  line-height: 2em;
+}
+
+.pf {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.pf li {
+  display: inline-block;
+  padding: 16px;
+  margin: 12px;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);;
+}
+
+
+
+/* ========================================
+    ライティング
+========================================= */
+
+
+.lighting {
+  width: 70vw;
+  height: 1000px;
+  background-color: #fff;
+  margin: 30em auto;
+}
+
+h1#lighting {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid #c0c0c0;
+}
+
+.l_content {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  margin-right: 36px;
+  margin-left: 36px;
+  line-height: 2em;
+}
+
+p.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 48px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.l_content li {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.l_content li a {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.l_content li a:hover {
+  color: #fff;
+  background-color: #808080;
+}
+
+
+/* ========================================
+    コンタクト
+========================================= */
+
+.contact {
+  width: 70vw;
+  height: 700px;
+  background-color: #fff;
+  margin: 30em auto;
+}
+
+h1#contact {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 180px;
+  padding-bottom: 48px;
+  border-bottom: 3px solid #c0c0c0;
+}
+
+.c_content p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 48px;
+  line-height: 2em;
+}
+
+address a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #434343;
+  font-family:  Avenir;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px;
+}
+
+address {
+  margin: 36px 48px;
+  vertical-align: middle;
+  line-height: 52px;
+  background: #c0c0c0;
+  border-radius: 2px;
+  color: #FFF;
+  font: 500 2em 'Rubik', sans-serif;  
+  border: 4px solid  #c0c0c0;
+  transition: all .35s cubic-bezier(0.23, -.61, .72, 1.5);
+  outline: none;  
+}
+
+address:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 24px rgba(239, 243, 194, 0); 
+  background: transparent;
+  color: #c0c0c0;
+}
+
+address:active, address:focus, address:hover {
+  outline: none;
+}
+
+/* ========================================
+    フッター
+========================================= */
+
+
+footer {
+  width: 100%;
+  height: 85px; 
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+.footer-text {
+  color: #434343;
+  font-size: 13px;
+}
